@@ -4,7 +4,8 @@ WORKDIR /bot
 
 ENV CLICKHOUSE_DSN="" \
     BOT_TOKEN="" \
-    ADMIN_ID=""
+    ADMIN_ID="" \
+    API_URL=""
 
 COPY ./requirements.txt /bot/
 RUN pip install --no-cache-dir --upgrade -r requirements.txt
